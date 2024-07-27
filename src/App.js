@@ -25,7 +25,7 @@ function App() {
   setInterval(updateTime,1000)
   function changeHandler(e) {
     e.preventDefault();
-    if (title !== '' && description !== '') {
+    if (title !== '') {
       let newTodo = {
         title: title,
         desc: description,
@@ -37,9 +37,7 @@ function App() {
       setDescription('');
       localStorage.setItem('todolist', JSON.stringify(updatedTodo));
     } else {
-      if (title === '' && description === '') alert('Please Enter the title and description');
-      else if (title === '') alert('Please Enter the title');
-      else alert('Please Enter the description');
+      alert('Please Enter the Title')
     }
   }
 
