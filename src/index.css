@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg-bgback{ 
+  background-color: #1f1e1e;  
+}
+.bg-bgmid{ 
+  background-color: #353434;
+  
+}
+.bg-bgitem{ 
+  background-color: #414040;
+  
+}
